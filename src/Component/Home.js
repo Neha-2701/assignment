@@ -130,7 +130,7 @@ export default function Home() {
 
     const handleRight = () => {
         const p = page;
-        p < 5 ? handlePageChange(p + 1) : handlePageChange(1);
+        p <= {totalPages} ? handlePageChange(p + 1) : handlePageChange({totalPages});
     };
 
     const startIndex = (currentPage - 1) * rowsPerPage;
@@ -234,7 +234,7 @@ export default function Home() {
                     ))}
                 </tbody>
             </table>
-            <div >
+            <div>
                 <div className='footerLeft' style={{ float: "left", left: '2px' }}>
                     <p>{selectedRowCount} of {filteredData.length} row(s) selected</p>
                 </div>

@@ -142,3 +142,14 @@ table input {
 .selected-row {
   background-color: #f0f0f0;
 }
+@media only screen and (max-width: 500px) {
+  .headerInput Input {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .headerInput Input {
+    width: 250px;
+  }
+}
